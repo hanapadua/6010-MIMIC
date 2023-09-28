@@ -93,3 +93,25 @@ Download the files using your terminal: wget -r -N -c -np --user mehakg --ask-pa
 - Follow each code bloack and read intructions given just before each code block to run code block.
 - Follow the exact file paths and filenames given in instructions for each code block to run the pipeline.
 - For evaluation module, clear instructions are provided on how to use it as a standalone module.
+
+--------------------------------------------------------------
+# Predicting Extended Length of Stay in ICUs
+
+In this project, you will develop a predictive model for extended length of stay (LOS) in ICUs using the MIMIC IV database. This project is very close to real world machine learning development because the MIMIC IV database contains extensive real world ICU and hospital EHR data in their original form. You will need to extract the relevant data from this database and select the right features to build your models and exercise all the best practices in machine learning to achieve the highest performance you can. In particular, note that the EHR data in ICUs are collected multiple times in a day. You should use the temporal patterns in the data to improve model performance.  
+
+Your model should predict those patients who will likely stay seven or more days in the ICU (extended LOS) using the first 24 hours of data in MIMIC IV. You may use any one or more supervised machine learning models for this project. Please follow the machine learning workflow described in the papers and discussed in class. In particular, you should carefully consider data preprocessing issues such as missing data, imbalanced data, outlier removal, data standardization, transformation and data encoding. You should include some form of the data exploration phase where you investigate the characteristics of the dataset. This exploration should in the minimum produce a Table 1 providing descriptive statistics for the dataset. Additional exploration of the dataset, for example, examining the distribution of variables and their relevance to the outcome, is encouraged. 
+
+Your dataset should be divided into 80% training and 20% testing. Among the training data, you may further use a certain percentage (e.g. 20%) for validation and hyperparameter tuning. Note that the testing data should not be used in anyway during model development. 
+
+The data exploration phase may assist you in selecting and possibly designing the features for your machine learning models. For every model that you develop, please make every effort to identify the best model parameters through hyperparameter tuning and model validation. You should pay attention to the metrics for assessing model performance and avoid model overfitting. Once the best model is developed, you should apply it to the testing dataset for final assessment. You should report the performance of the models on both the training dataset and testing dataset. 
+
+This is a group project. You may form a group of 2 to 3 members.      
+
+Deliverables:
+
+Project report (2-3 pages) following the format of the two papers discussed in class
+Slides for an in-class presentation and demonstration (around 10 minutes)
+Source code for the project
+Please note that using of ChatGPT and other online resources are permitted in this project. However, if a large segment of your code comes from online resources, you must describe the prompt your used, the answer you received, and what and how you adopted for your project.
+
+
